@@ -27,8 +27,17 @@ class Song
   end
   
   def self.genre_count
+    hash={}
+    hash = @@genres.group_by do |g|
+       g
+       binding.pry
+     end
+     
+    
      
   end
+  
+  
   
   def self.artist_count
     
